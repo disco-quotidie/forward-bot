@@ -6,6 +6,8 @@
 
 const TelegramBot = require("node-telegram-bot-api");
 
+const config = require('./config.json');
+
 const bot = new TelegramBot(config.TELEGRAM_TOKEN, { polling: true });
 
 
@@ -31,4 +33,4 @@ bot.onText(/\/start/, (msg) => {
   }
 });
 
-bot.startPolling();
+// bot.startPolling();
