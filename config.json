@@ -1,3 +1,8 @@
 {
-  "TELEGRAM_TOKEN": "6727949563:AAGPnAKgnSebNG6nFUmw_xHWH4lUDcOSeI8"
+  "BOT_DISPLAY_NAME": "dn_test_bot",
+  "BOT_USERNAME": "dndn_test_bot",
+  "TELEGRAM_TOKEN": "6727949563:AAGPnAKgnSebNG6nFUmw_xHWH4lUDcOSeI8",
+  "ACCESS_MEMBERS": [
+    "contract0xA8"
+  ]
 }

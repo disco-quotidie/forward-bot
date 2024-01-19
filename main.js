@@ -10,10 +10,12 @@ const config = require('./config.json');
 
 const bot = new TelegramBot(config.TELEGRAM_TOKEN, { polling: true });
 
-
 bot.onText(/\/start/, (msg) => {
+
   let sendMessageCalled = false;
   current_action = "";
+
+  console.log(msg);
 
   if (!sendMessageCalled) {
     bot.sendMessage(
@@ -21,10 +23,6 @@ bot.onText(/\/start/, (msg) => {
       "Welcome to our BossBabySanta bot !",
       {
         reply_markup: {
-          keyboard: [
-            ["🏆 GET ALL SERVERS"],
-            ["🔐 ADD SERVER", "✂️ DELETE SERVER"],
-          ],
         },
       }
     );
@@ -32,5 +30,6 @@ bot.onText(/\/start/, (msg) => {
     sendMessageCalled = true;
   }
 });
+
 
 // bot.startPolling();
